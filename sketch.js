@@ -124,7 +124,5 @@ function mouseReleased(){
   slingShot.fly();
 }
 function keyPressed(){
-  if(keyCode === 32){
-      slingShot.attach(this.polygon);
-  }
+//write code for extra chance of the player
 }
