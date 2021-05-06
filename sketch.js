@@ -66,7 +66,7 @@ function setup() {
 function draw() {
   background(56,44,44); 
  
-  //Engine.update(engine);
+  Engine.update(engine);
   
   textSize(20);
   fill("lightyellow");
@@ -125,4 +125,7 @@ function mouseReleased(){
 }
 function keyPressed(){
 //write code for extra chance of the player
+  if(keyCode === 32){
+    slingShot.attach(this.polygon);
+  }
 }
